@@ -6,8 +6,13 @@ Homebrew tap for [Nosy](https://github.com/2026osscontest/nosy) — a desktop pe
 
 ```sh
 brew tap 2026osscontest/nosy
+brew trust 2026osscontest/nosy
 brew install --cask nosy
 ```
+
+Homebrew refuses to load casks from third-party taps until you trust them, so
+the `brew trust` line is required — without it the install stops with
+`Refusing to load cask ... from untrusted tap`.
 
 Nosy is signed ad-hoc but not notarized by Apple, so macOS quarantines it on
 first launch. Clear the quarantine flag once:
