@@ -10,7 +10,7 @@ cask "nosy" do
   desc "Desktop pet that diagnoses your development environment"
   homepage "https://github.com/2026osscontest/nosy"
 
-  depends_on macos: ">= :monterey"
+  depends_on macos: :monterey
 
   app "Nosy.app"
 
